@@ -216,6 +216,37 @@ Building a reusable GHL automation template for tattoo artists to handle Instagr
 
 ## Decision Log
 
+### Dec 22, 2025 - AI Agents for Testing (Workflow Optimization)
+
+**Context:**
+Testing Conversational AI in workflows requires creating full workflow, connecting FB/Instagram, and sending actual messages. Slow and cumbersome for refining AI responses.
+
+**Discovery:** GHL has standalone "AI Agents" feature for testing Conv AI
+
+**Options Considered:**
+1. **Test in workflows** - Full integration but 15-20 min per iteration
+2. **Use AI Agents** - Standalone testing, 2-3 min per iteration (CHOSEN)
+
+**Decision Made:** Test Conv AI in AI Agents before deploying to workflows
+
+**Rationale:**
+- AI Agents allow testing Conv AI without workflows or platform connections
+- Much faster iteration (80% time savings)
+- NEW GHL FEATURE: AI Agents now support human handover with custom rules
+- More control over testing edge cases
+
+**Implementation:**
+1. Create AI Agent in GHL (Settings → AI & Integrations → AI Agents)
+2. Test and refine Conv AI configuration
+3. Once satisfied, copy to FB Messenger + Instagram workflows
+4. Documented testing workflow in conversational-ai-config.md
+
+**Impact:** Significantly faster Conv AI refinement process for all future projects
+
+**Documented:** conversational-ai-config.md, ClickUp task 86dyw2549
+
+---
+
 ### Dec 22, 2025 - Instagram "Allow Re-Entry" Setting
 
 **Context:**

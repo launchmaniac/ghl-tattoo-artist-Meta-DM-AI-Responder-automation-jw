@@ -8,6 +8,43 @@
 
 ---
 
+## Testing Workflow (IMPORTANT - Do This First!)
+
+**Discovery (Dec 22, 2025):** GHL has standalone "AI Agents" feature for testing Conversational AI without creating workflows or connecting FB/Instagram.
+
+### How to Test Conv AI Before Deploying to Workflows:
+
+1. **Create AI Agent** (in GHL: Settings → AI & Integrations → AI Agents)
+   - Name: "Tattoo Bot Test"
+   - Add Conversational AI configuration (Personality, Instructions, Questions)
+   - NEW: Set human handover rules (GHL recent update)
+
+2. **Test Responses Directly in GHL**
+   - No need to connect FB/Instagram
+   - No need to create workflows
+   - Test conversations in GHL interface
+   - Iterate on prompts quickly (2-3 min per iteration vs. 15-20 min)
+
+3. **Refine Until Satisfied**
+   - Test booking intent recognition
+   - Test handoff behavior
+   - Test tone and personality
+   - Test edge cases
+
+4. **Deploy to Workflows**
+   - Copy final configuration to FB Messenger workflow
+   - Copy to Instagram DM workflow
+   - Activate and test in real platform
+
+**Time Savings:** 80% reduction in testing iterations
+
+**NEW GHL FEATURE:**
+- AI Agents now support human handover with custom rules
+- Can set specific conditions for when to hand over to human
+- More control than workflow-based handoff
+
+---
+
 ## Conversational AI Settings
 
 ### Response Limit: **3 messages**
