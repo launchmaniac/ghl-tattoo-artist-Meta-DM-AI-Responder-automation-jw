@@ -211,6 +211,45 @@ Building a reusable GHL automation template for tattoo artists to handle Instagr
 
 ## Decision Log
 
+### Dec 27, 2025 - Constraint-Based Design Framework for Conversational AI
+
+**Context:**
+Building Conversational AI that stays within boundaries while remaining helpful. Traditional approach of telling AI "what to do" doesn't prevent overreach.
+
+**Discovery:** Constraint-based design framework - tell AI what NOT to do more than what to do
+
+**Framework Established:**
+1. One question at a time (hard rule)
+2. Explicit trigger phrases over AI inference
+3. Stop after handoff requires explicit instruction
+4. State timeline, don't ask open questions
+5. Context awareness needs constant reinforcement
+6. Returning clients need zero friction
+7. Test reveals all failure modes
+
+**Key Insight:** "Constrain first, optimize second. AI needs guardrails more than freedom."
+
+**Implementation:**
+- Tested all scenarios in AI Agents
+- Added explicit constraints to Personality and Instructions sections
+- Defined "STAY SILENT" conditions clearly
+- Hardcoded "Tony" for MVP (variable replacement needed for scaling)
+
+**Impact:**
+- Cleaner handoffs (AI stops when it should)
+- Better user experience (one question at a time)
+- Faster qualification (timeline stated upfront)
+- Template ready for scaling with Geoffrey's SDK
+
+**For Geoffrey's SDK:**
+- Variable replacement for artist name
+- Proper stop-after-handoff enforcement
+- Template exactly, just swap hardcoded values
+
+**Documented:** Lessons_Learned_Conversational_AI_Constraint_Based_Design.md (comprehensive framework)
+
+---
+
 ### Dec 22, 2025 - AI Agents for Testing (Workflow Optimization)
 
 **Context:**

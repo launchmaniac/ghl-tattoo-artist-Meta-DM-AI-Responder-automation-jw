@@ -6,6 +6,8 @@
 
 **Artist-Specific Info:** See `artist-config.md` for client details
 
+**Design Framework:** See `Lessons_Learned_Conversational_AI_Constraint_Based_Design.md` for constraint-based design principles and 8 key refinements that make this configuration work.
+
 ---
 
 ## Testing Workflow (IMPORTANT - Do This First!)
