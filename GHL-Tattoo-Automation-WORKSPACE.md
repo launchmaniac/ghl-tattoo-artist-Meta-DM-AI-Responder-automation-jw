@@ -98,34 +98,35 @@ Building a reusable GHL automation template for tattoo artists to handle Instagr
 
 ---
 
-## This Week: Dec 22-27, 2025
+## This Week: Dec 22-29, 2025
 
-**Week Focus:** Finalize Conversational AI, test all workflows end-to-end, prepare for full system activation once A2P approved.
+**Week Focus:** Finalize Conversational AI using AI Agents, test all workflows end-to-end, evaluate Comment Responder. **ALL DUE: Monday Dec 29 EOD**
 
 ### In Progress
 
 - [ ] **Finalize Conversational AI for FB + Instagram** `CU-ID: 86dyw26eg`
-  - **Description:** Refining Conv AI prompts for natural handoff behavior (both FB Messenger and Instagram DM workflows)
-  - **Status:** Testing responses, adjusting tone
+  - **Description:** Using AI Agents to refine Conv AI prompts for natural handoff behavior (both FB Messenger and Instagram DM workflows)
+  - **Status:** Testing in AI Agents (Dec 22 discovery)
   - **Priority:** High
-  - **Due Date:** 2025-12-23
+  - **Due Date:** 2025-12-29 (Monday EOD)
   - **Files Involved:** conversational-ai-config.md
   - **Blocker:** None
-  - **Notes:** Both workflows built, Instagram "Allow Re-Entry" toggle discovered (Dec 22). Testing booking intent recognition.
+  - **Notes:** AI Agents feature discovered for faster testing (80% time savings). Testing booking intent recognition and handoff rules.
 
 - [ ] **Test Booking Workflow End-to-End** `CU-ID: 86dyz5362`
   - **Description:** Test complete booking workflow now that Tony's calendar is connected
   - **Status:** Ready to test
   - **Priority:** High
-  - **Due Date:** 2025-12-24
+  - **Due Date:** 2025-12-29 (Monday EOD)
   - **Blocker:** None (can test workflow logic before A2P approval)
 
 - [ ] **Evaluate Comment Responder** `CU-ID: 86dyz536m`
-  - **Description:** Research GHL's built-in Comment Responder feature for FB/Instagram posts
+  - **Description:** Research GHL's built-in Comment Responder feature for FB/Instagram posts. Possibly build simple version if worthwhile.
   - **Status:** Not started
-  - **Priority:** Normal
-  - **Due Date:** 2025-12-26
+  - **Priority:** High
+  - **Due Date:** 2025-12-29 (Monday EOD)
   - **Blocker:** None
+  - **Notes:** May add simple Comment Responder build if evaluation shows value
 
 ### Completed This Week
 
