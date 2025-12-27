@@ -187,14 +187,8 @@ Building Conversational AI that stays within defined boundaries while remaining 
 - [x] State timeline upfront (6-8 weeks)
 - [x] Add context awareness reminders
 - [x] Implement returning client check (if GHL supports)
-- [x] Hardcode "Tony" for pilot (temporary)
+- [x] Hardcode "Tony" for pilot (artist name must be hardcoded)
 - [x] Test all scenarios in AI Agents before deployment
-
-**For Template Scaling (Geoffrey's SDK):**
-- [ ] Variable replacement for artist name
-- [ ] Proper stop-after-handoff enforcement
-- [ ] Returning client detection logic
-- [ ] Template exactly as Tony's version, just swap hardcoded values
 
 ---
 
@@ -294,47 +288,25 @@ After gathering size + placement - stay silent.
    - Test all edge cases before going live
    - Document failures as you find them
 
-3. **Document Geoffrey's SDK Requirements Early**
-   - If multi-tenant, plan variable replacement from start
-   - Don't hardcode values that need to scale
-   - Coordinate with Geoffrey on SDK capabilities
-
-4. **Add to Template Checklist**
+3. **Add to Template Checklist**
    - Include constraint-based design in AI-Context-Workspace-Template
    - Make it standard practice for all Conv AI work
 
 ---
 
-## For Geoffrey (SDK Integration Notes)
+## GHL Custom Values Limitation
 
-**Requirements for Template Scaling:**
+**Technical Constraint:** GHL Agent builder only allows for business name to be included in custom values (CV's). Artist name has to be hardcoded to get system operational.
 
-1. **Variable Replacement Needed:**
-   - `[ARTIST_NAME]` → Dynamic artist first name
-   - `[ARTIST_PHONE]` → Dynamic SMS number
-   - `[AVAILABLE_MONTH]` → Dynamic booking timeline
-   - `[Instagram/Facebook]` → Platform detection
+**Current Implementation:** Hardcoded "Tony" in Personality and Instructions sections.
 
-2. **Stop-After-Handoff Enforcement:**
-   - GHL native "stay silent" instruction works but needs monitoring
-   - May need SDK-level enforcement if GHL changes behavior
-
-3. **Template Deployment:**
-   - Use Tony's exact configuration as template
-   - Swap only hardcoded values
-   - Don't modify constraint logic
-   - Test after each deployment
-
-4. **Multi-Tenant Support:**
-   - Each sub-account needs own Conv AI instance
-   - Variables must pull from sub-account data
-   - No cross-contamination between artists
+**Impact:** Each artist deployment requires manual find/replace of artist name in configuration.
 
 ---
 
 ## Tags
 
-`[discovery]` `[framework]` `[conversational-ai]` `[constraint-based-design]` `[reusable]` `[high-impact]` `[template]` `[sdk-requirement]`
+`[discovery]` `[framework]` `[conversational-ai]` `[constraint-based-design]` `[reusable]` `[high-impact]` `[template]` `[ghl-limitation]`
 
 ---
 

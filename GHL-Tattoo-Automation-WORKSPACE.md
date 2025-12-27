@@ -239,12 +239,9 @@ Building Conversational AI that stays within boundaries while remaining helpful.
 - Cleaner handoffs (AI stops when it should)
 - Better user experience (one question at a time)
 - Faster qualification (timeline stated upfront)
-- Template ready for scaling with Geoffrey's SDK
+- Template ready for reuse (manual find/replace for artist name)
 
-**For Geoffrey's SDK:**
-- Variable replacement for artist name
-- Proper stop-after-handoff enforcement
-- Template exactly, just swap hardcoded values
+**GHL Limitation:** Agent builder only allows business name in custom values. Artist name must be hardcoded for each deployment.
 
 **Documented:** Lessons_Learned_Conversational_AI_Constraint_Based_Design.md (comprehensive framework)
 
