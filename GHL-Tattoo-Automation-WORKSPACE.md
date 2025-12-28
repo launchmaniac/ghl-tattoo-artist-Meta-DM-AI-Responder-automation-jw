@@ -225,7 +225,9 @@ Building Conversational AI that stays within boundaries while remaining helpful.
 4. State timeline, don't ask open questions
 5. Context awareness needs constant reinforcement
 6. Returning clients need zero friction
-7. Test reveals all failure modes
+7. GHL custom values limitation (hardcode artist name)
+8. Test reveals all failure modes
+9. Human handoff action requires scenario toggle (GHL configuration)
 
 **Key Insight:** "Constrain first, optimize second. AI needs guardrails more than freedom."
 

@@ -46,7 +46,7 @@ Building Conversational AI that stays within defined boundaries while remaining 
 
 ---
 
-## Key Refinements (8 Discoveries)
+## Key Refinements (9 Discoveries)
 
 ### 1. One Question at a Time (Hard Rule)
 
@@ -178,6 +178,28 @@ Building Conversational AI that stays within defined boundaries while remaining 
 
 ---
 
+### 9. Human Handoff Action Requires Scenario Toggle (GHL Configuration)
+
+**Problem:** Added human handoff action to workflow but it wasn't triggering
+
+**Why It Fails:** GHL requires explicit scenario toggle to activate human handoff action. Not obvious in UI.
+
+**Solution:** Toggle ON the scenario for human handoff action in workflow settings
+
+**How to Fix:**
+1. Open workflow with human handoff action
+2. Find the human handoff action node
+3. Toggle ON the scenario (enable the handoff scenario)
+4. Save workflow
+
+**Why This Matters:** Human handoff won't work at all without this toggle. Silent failure - workflow runs but handoff never triggers.
+
+**Impact:** Critical for testing and deployment. Easy to miss during workflow build.
+
+**Prevention:** Add to workflow deployment checklist - always verify scenario toggle is ON for human handoff actions.
+
+---
+
 ## Implementation Checklist
 
 **For Current Project (Tony Raz MVP):**
@@ -188,6 +210,7 @@ Building Conversational AI that stays within defined boundaries while remaining 
 - [x] Add context awareness reminders
 - [x] Implement returning client check (if GHL supports)
 - [x] Hardcode "Tony" for pilot (artist name must be hardcoded)
+- [x] Toggle ON scenario for human handoff action
 - [x] Test all scenarios in AI Agents before deployment
 
 ---
