@@ -104,22 +104,29 @@ Building a reusable GHL automation template for tattoo artists to handle Instagr
 
 ### In Progress
 
-- [ ] **Test Booking Workflow End-to-End** `CU-ID: 86dyz5362`
-  - **Description:** Test complete booking workflow now that Tony's calendar is connected
-  - **Status:** Ready to test
-  - **Priority:** High
-  - **Due Date:** 2025-12-29 (Monday EOD)
-  - **Blocker:** None (can test workflow logic before A2P approval)
-
-- [ ] **Evaluate Comment Responder** `CU-ID: 86dyz536m`
-  - **Description:** Research GHL's built-in Comment Responder feature for FB/Instagram posts. Possibly build simple version if worthwhile.
-  - **Status:** Not started
+- [ ] **Test Comment Responder Workflow** `CU-ID: 86dyz536m`
+  - **Description:** Test GHL Comment Responder workflow for FB/Instagram posts
+  - **Status:** Testing now
   - **Priority:** High
   - **Due Date:** 2025-12-29 (Monday EOD)
   - **Blocker:** None
-  - **Notes:** May add simple Comment Responder build if evaluation shows value
+  - **Notes:** Comment workflow built, testing before final snapshot push
+
+- [ ] **Final Snapshot Push to Tony's Account**
+  - **Description:** Push updated workflows (FB AI Agent, Instagram AI Agent, handoff workflows, booking workflow, comment responder) to Tony's sub-account
+  - **Status:** Pending comment workflow test
+  - **Priority:** High
+  - **Due Date:** 2025-12-29 (Monday EOD)
+  - **Blocker:** Complete comment workflow testing first
+  - **Notes:** Final deployment before A2P approval
 
 ### Completed This Week
+
+- [x] **Workflows Completed and Tested** - Dec 27, 2025
+  - **What Was Done:** Built and tested FB AI Agent, Instagram AI Agent, 2 separate handoff workflows, and booking workflow
+  - **Outcome:** All workflows functioning correctly. Platform-specific SMS notifications working (FB vs Instagram handoff)
+  - **Architecture:** 2 AI Agents + 2 handoff workflows for clear platform context
+  - **Notes:** Booking workflow tested and ready. Conversational AI working with constraint-based design framework.
 
 - [x] **Finalize Conversational AI for FB + Instagram** - Dec 27, 2025
   - **What Was Done:** Tested and refined Conv AI configuration in standalone AI Agent, then deployed to Facebook Messenger workflow
