@@ -46,7 +46,7 @@ Building Conversational AI that stays within defined boundaries while remaining 
 
 ---
 
-## Key Refinements (9 Discoveries)
+## Key Refinements (10 Discoveries)
 
 ### 1. One Question at a Time (Hard Rule)
 
@@ -200,6 +200,37 @@ Building Conversational AI that stays within defined boundaries while remaining 
 
 ---
 
+### 10. Separate AI Agents Required for Platform-Specific SMS Notifications
+
+**Problem:** Internal SMS notifications from AI Agent don't indicate source platform (Facebook vs Instagram). Artist receives handoff alert but doesn't know which platform to check.
+
+**Why It Fails:** GHL AI Agent's internal SMS feature can't include dynamic source information in the message.
+
+**Solution:** Trigger separate workflows with AI Agent to handle platform-specific handoff
+
+**Implementation Required:**
+1. Create separate AI Agent for Facebook
+2. Create separate AI Agent for Instagram
+3. Set up "stop bot" phrases for human handoff triggers
+4. Create two separate handoff workflows:
+   - Workflow 1: FB handoff → SMS says "Open Facebook DMs"
+   - Workflow 2: Instagram handoff → SMS says "Open Instagram DMs"
+5. Configure AI Agent to trigger appropriate workflow based on platform
+
+**Why This Matters:** Artist needs to know which platform to check immediately. Without source indication, they waste time checking both platforms.
+
+**Impact:** Better user experience for artist. Clear, actionable SMS notifications with platform context.
+
+**Architecture:**
+- 2 AI Agents (FB + Instagram)
+- 2 Handoff Workflows (FB + Instagram)
+- Human handoff phrases trigger workflow instead of internal SMS
+- Each workflow sends platform-specific SMS message
+
+**Prevention:** Always plan for platform-specific context in multi-channel setups. Don't rely on AI Agent internal SMS for complex handoff scenarios.
+
+---
+
 ## Implementation Checklist
 
 **For Current Project (Tony Raz MVP):**
@@ -211,6 +242,9 @@ Building Conversational AI that stays within defined boundaries while remaining 
 - [x] Implement returning client check (if GHL supports)
 - [x] Hardcode "Tony" for pilot (artist name must be hardcoded)
 - [x] Toggle ON scenario for human handoff action
+- [x] Create separate AI Agents for FB + Instagram
+- [x] Create separate handoff workflows for platform-specific SMS
+- [x] Set up "stop bot" phrases to trigger workflows
 - [x] Test all scenarios in AI Agents before deployment
 
 ---

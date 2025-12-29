@@ -228,8 +228,11 @@ Building Conversational AI that stays within boundaries while remaining helpful.
 7. GHL custom values limitation (hardcode artist name)
 8. Test reveals all failure modes
 9. Human handoff action requires scenario toggle (GHL configuration)
+10. Separate AI Agents required for platform-specific SMS (FB vs Instagram)
 
 **Key Insight:** "Constrain first, optimize second. AI needs guardrails more than freedom."
+
+**Architecture Decision:** 2 AI Agents (FB + Instagram) with 2 separate handoff workflows to indicate platform source in SMS notifications.
 
 **Implementation:**
 - Tested all scenarios in AI Agents
