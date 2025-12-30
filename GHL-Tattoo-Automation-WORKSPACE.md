@@ -147,10 +147,11 @@ Building a reusable GHL automation template for tattoo artists to handle Instagr
 
 ### Completed Previously
 
-- [x] **A2P Registration Submitted** - Dec 17, 2025
-  - **What Was Done:** Completed A2P sole proprietor registration for Tony
-  - **Outcome:** Application submitted, identity verification link sent to Tony, waiting 3-7 days for approval
+- [x] **A2P Registration Resubmitted** - Dec 27, 2025
+  - **What Was Done:** Resubmitted A2P sole proprietor registration for Tony (original Dec 17 submission had issues)
+  - **Outcome:** Application resubmitted, waiting 3-7 days for approval (expected by Jan 3, 2026)
   - **Cost:** $40 upfront ($25 A2P + $15 domain: TonyRazTattoo.com)
+  - **Timeline Impact:** ~10 day delay from original expected approval
   - **Learnings:** Privacy Policy + Terms of Service required, domain purchase mandatory for funnel pages
 
 - [x] **Privacy Policy + Terms of Service Templates** - Dec 17, 2025
@@ -172,10 +173,11 @@ Building a reusable GHL automation template for tattoo artists to handle Instagr
 ### Blockers
 
 **🚨 Critical Blockers:**
-- **Waiting for A2P Approval** (Dec 17 submission)
+- **Waiting for A2P Approval** (Resubmitted Dec 27, 2025)
   - **Impact:** Cannot activate SMS reminders or purchase phone number
-  - **Needed to Unblock:** 3-7 day approval window (expected by Dec 24)
-  - **Status:** Waiting
+  - **Needed to Unblock:** 3-7 day approval window (expected by Jan 3, 2026)
+  - **Status:** Waiting (original Dec 17 submission had issues, resubmitted Dec 27)
+  - **Timeline Impact:** Delayed by ~10 days from original expected approval
 
 **No other blockers** ✅
 
