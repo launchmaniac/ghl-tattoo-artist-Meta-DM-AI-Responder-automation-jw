@@ -220,6 +220,45 @@ Building a reusable GHL automation template for tattoo artists to handle Instagr
 
 ## Decision Log
 
+### Dec 27, 2025 - A2P Registration: Agency Brand vs. Client Name
+
+**Context:**
+A2P registration failed when client's name (Tony) was listed as brand and sender, even though application was submitted under agency owner's individual account with agency owner's phone number.
+
+**Problem:** Misalignment between A2P brand (Tony), account owner (agency), and phone number (agency).
+
+**Root Cause:** Carrier requirements mandate A2P brand must match actual account ownership and phone number holder.
+
+**Options Considered:**
+1. **Client name as brand** - Carrier rejected due to ownership misalignment (TRIED, FAILED)
+2. **Agency name as brand, client in content** - Carrier compliant (CHOSEN)
+3. **Transfer account to client** - Complex, higher client cost (REJECTED for MVP)
+
+**Decision Made:** Use agency owner's legal name as A2P brand for all client registrations.
+
+**Rationale:**
+- Aligns with carrier compliance requirements
+- Agency owns GHL account and phone number
+- Client name appears in message content (user-facing experience)
+- Simplifies onboarding (no ownership transfer needed)
+- Reduces per-client costs (single A2P registration)
+
+**Implementation:**
+- Resubmitted A2P with agency owner's legal name as brand
+- Tony referenced only in message content and consent language
+- Updated Privacy Policy to clarify agency operates service
+- All future clients follow same pattern
+
+**Impact:**
+- Original submission failed (Dec 17)
+- Resubmitted Dec 27 with corrected brand alignment
+- ~10 day delay to approval (Jan 3, 2026 vs. Dec 24, 2025)
+- Prevents same mistake on future client registrations
+
+**Documented:** Lessons_Learned_A2P_Registration_Brand_Ownership.md (comprehensive guide for template scaling)
+
+---
+
 ### Dec 27, 2025 - Constraint-Based Design Framework for Conversational AI
 
 **Context:**
